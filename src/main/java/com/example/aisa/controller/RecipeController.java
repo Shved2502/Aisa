@@ -27,5 +27,3 @@ public class RecipeController {
         return new ResponseEntity<>(HttpStatus.OK);
     }
 }
-
-// http://localhost:8080/swagger-ui/index.html#/
