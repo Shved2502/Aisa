@@ -1,0 +1,18 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.1.xsd">
+
+    <changeSet author="job.shvedov@mail.ru" id="fill_table_coffee">
+        <sql>
+            insert into coffee_machine.coffee values (1, 'Cappuccino', 10, 70, 150, 7, 9);
+            insert into coffee_machine.coffee values (2, 'Americano', 12, 0, 150, 6, 6);
+            insert into coffee_machine.coffee values (3, 'Espresso', 12, 0, 100, 6, 5);
+            insert into coffee_machine.coffee values (4, 'Latte', 9, 100, 150, 8, 10);
+        </sql>
+        <rollback>
+        </rollback>
+    </changeSet>
+</databaseChangeLog>
