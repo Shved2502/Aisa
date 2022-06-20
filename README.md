@@ -10,3 +10,12 @@ Test task for Aisa
   
 `GET api/v1/recipes`
 
+Для добавления нового рецепта в память в формате : 
+
+* String name - название кофе
+* Integer coffeeConsumption - требуемое количество кофе в граммах
+* Integer milkConsumption - требуемое количество молока в миллилитрах
+* Integer waterConsumption - требуемое количество воды в миллилитрах
+* Integer purityConsumption - потребляемое количество "единиц чистоты"
+* Integer timeConsumption - время на приготовление в секундах
+
